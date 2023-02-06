@@ -1,0 +1,21 @@
+.root {
+    border: 1px solid black;
+    width: 570px;
+    height: 570px;
+    position: relative;
+    overflow: hidden;
+    img {
+        position: absolute;
+        opacity: 0.5;
+        width: 100%;
+        margin-top: -8px;
+    }
+}
+
+.canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}

@@ -1,0 +1,265 @@
+.root {
+    height: 523px;
+    width: 300px;
+    position: relative;
+}
+
+.boots {
+    position: absolute;
+    bottom: -6px;
+    left: 67px;
+    height: 134px;
+    width: 295px;
+
+    .left {
+        width: 107px;
+        height: 100%;
+        position: absolute;
+        bottom: 1px;
+        .leg {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: #2242c7;
+            top: -6px;
+            left: 39px;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 14px;
+                height: 28px;
+                background: #222184;
+                top: 0px;
+                left: 28px;
+            }
+        }
+        .extraItems {
+            position: absolute;
+            bottom: 28px;
+            width: 14px;
+            height: 14px;
+            left: 70px;
+            z-index: 2;
+            background: white;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                top: -84px;
+                left: -31px;
+                background: #a5a5c6;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                top: -84px;
+                left: -45px;
+                background: #636384;
+            }
+        }
+
+        .socks {
+            position: absolute;
+            background: #a5a5c6;
+            top: 22px;
+            right: 12px;
+            width: 70px;
+            height: 28px;
+            & > div {
+                position: absolute;
+                width: 28px;
+                height: 14px;
+                background: white;
+                left: 28px;
+                z-index: 1;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 42px;
+                    height: 14px;
+                    background: #636384;
+                    right: -42px;
+                    top: 14px;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 14px;
+                    height: 42px;
+                    background: #636384;
+                    right: -28px;
+                    top: -14px;
+                }
+            }
+            &:before {
+                content: '';
+                width: 42px;
+                background: #636384;
+                height: 14px;
+                top: 14px;
+                position: absolute;
+                z-index: 1;
+                left: -14px;
+            }
+            
+            &:after {
+                content: '';
+                width: 14px;
+                background: #636384;
+                height: 14px;
+                top: 0px;
+                position: absolute;
+                z-index: 1;
+                left: -14px;
+            }
+        }
+
+        .laces {
+            position: absolute;
+            width: 70px;
+            height: 14px;
+            background: white;
+            bottom: 56px;
+            left: 28px;
+            & > div {
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background: #840302;
+                left: -14px;
+                z-index: 1;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 56px;
+                    height: 14px;
+                    background: #840302;
+                    top: -14px;
+                    left: 14px;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 28px;
+                    height: 14px;
+                    background: #e60601;
+                    top: -14px;
+                    left: 28px;
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: -14px;
+                width: 14px;
+                height: 14px;
+                background: #a5a5c6;
+                top: 14px;
+                z-index: 1;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                right: -14px;
+                width: 14px;
+                height: 14px;
+                background: #a5a5c6;
+                top: 14px;
+                z-index: 1;
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            background: black;
+            height: 14px;
+            bottom: 0px;
+            position: absolute;
+            left: 14px;
+            & > div {
+                position: absolute;
+                z-index: 0;
+                background: #e70601;
+                width: 70px;
+                height: 42px;
+                bottom: 14px;
+                left: 14px;
+                & > div {
+                    position: absolute;
+                    width: 14px;
+                    height: 56px;
+                    background: black;
+                    left: -28px;
+                    bottom: 0px;                ;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 84px;
+                        height: 14px;
+                        background: black;
+                        top: -14px;
+                        z-index: 0;
+                        left: 14px;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 14px;
+                        height: 14px;
+                        background: black;
+                        top: 0px;
+                        z-index: 0;
+                        right: -98px;
+                    }
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 14px;
+                    height: 42px;
+                    background: #840201;
+                    right: -14px;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background: #840201;
+                    right: 0;
+                }
+            }
+            &::after {
+                content: '';
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                bottom: 28px;
+                background: #e70601;
+                left: 28px;
+                z-index: 2;
+            }
+            &::before {
+                content: '';
+                left: 0px;
+                height: 28px;
+                width: 42px;
+                background: #840201;
+                position: absolute;
+                bottom: 14px;
+                z-index: 1;
+            }
+        }
+    }
+    .right {
+        position: absolute;
+        left: 107px;
+        bottom: 1px;
+        height: 100%;
+        width: 188px;
+    }
+}
