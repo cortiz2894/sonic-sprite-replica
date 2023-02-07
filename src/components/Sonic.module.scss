@@ -1,3 +1,5 @@
+@import '../styles/base';
+
 .root {
     height: 523px;
     width: 300px;
@@ -20,15 +22,15 @@
             position: absolute;
             width: 28px;
             height: 28px;
-            background: #2242c7;
+            background: var(--blue);
             top: -6px;
-            left: 39px;
+            left: 42px;
             &:after {
                 content: "";
                 position: absolute;
                 width: 14px;
                 height: 28px;
-                background: #222184;
+                background: var(--blue-strong);
                 top: 0px;
                 left: 28px;
             }
@@ -40,7 +42,7 @@
             height: 14px;
             left: 70px;
             z-index: 2;
-            background: white;
+            background: var(--white);
 
             &:after {
                 content: '';
@@ -48,8 +50,8 @@
                 width: 14px;
                 height: 14px;
                 top: -84px;
-                left: -31px;
-                background: #a5a5c6;
+                left: -28px;
+                background: var(--grey-light);
             }
             &:before {
                 content: "";
@@ -57,23 +59,23 @@
                 width: 14px;
                 height: 14px;
                 top: -84px;
-                left: -45px;
-                background: #636384;
+                left: -42px;
+                background: var(--grey-strong);
             }
         }
 
         .socks {
             position: absolute;
-            background: #a5a5c6;
+            background: var(--grey-light);
             top: 22px;
-            right: 12px;
+            right: 9px;
             width: 70px;
             height: 28px;
             & > div {
                 position: absolute;
                 width: 28px;
                 height: 14px;
-                background: white;
+                background: var(--white);
                 left: 28px;
                 z-index: 1;
                 &:after {
@@ -81,7 +83,7 @@
                     position: absolute;
                     width: 42px;
                     height: 14px;
-                    background: #636384;
+                    background: var(--grey-strong);
                     right: -42px;
                     top: 14px;
                 }
@@ -90,7 +92,7 @@
                     position: absolute;
                     width: 14px;
                     height: 42px;
-                    background: #636384;
+                    background: var(--grey-strong);
                     right: -28px;
                     top: -14px;
                 }
@@ -98,7 +100,7 @@
             &:before {
                 content: '';
                 width: 42px;
-                background: #636384;
+                background: var(--grey-strong);
                 height: 14px;
                 top: 14px;
                 position: absolute;
@@ -109,7 +111,7 @@
             &:after {
                 content: '';
                 width: 14px;
-                background: #636384;
+                background: var(--grey-strong);
                 height: 14px;
                 top: 0px;
                 position: absolute;
@@ -122,14 +124,14 @@
             position: absolute;
             width: 70px;
             height: 14px;
-            background: white;
+            background: var(--white);
             bottom: 56px;
             left: 28px;
             & > div {
                 position: absolute;
                 width: 14px;
                 height: 14px;
-                background: #840302;
+                background: var(--red-strong);
                 left: -14px;
                 z-index: 1;
                 &:before {
@@ -137,7 +139,7 @@
                     position: absolute;
                     width: 56px;
                     height: 14px;
-                    background: #840302;
+                    background: var(--red-strong);
                     top: -14px;
                     left: 14px;
                 }
@@ -146,7 +148,7 @@
                     position: absolute;
                     width: 28px;
                     height: 14px;
-                    background: #e60601;
+                    background: var(--red);
                     top: -14px;
                     left: 28px;
                 }
@@ -157,7 +159,7 @@
                 left: -14px;
                 width: 14px;
                 height: 14px;
-                background: #a5a5c6;
+                background: var(--grey-light);
                 top: 14px;
                 z-index: 1;
             }
@@ -167,7 +169,7 @@
                 right: -14px;
                 width: 14px;
                 height: 14px;
-                background: #a5a5c6;
+                background: var(--grey-light);
                 top: 14px;
                 z-index: 1;
             }
@@ -175,7 +177,7 @@
 
         .bottom {
             width: 100%;
-            background: black;
+            background: var(--black);
             height: 14px;
             bottom: 0px;
             position: absolute;
@@ -192,7 +194,7 @@
                     position: absolute;
                     width: 14px;
                     height: 56px;
-                    background: black;
+                    background: var(--black);
                     left: -28px;
                     bottom: 0px;                ;
                     &:before {
@@ -200,7 +202,7 @@
                         position: absolute;
                         width: 84px;
                         height: 14px;
-                        background: black;
+                        background: var(--black);
                         top: -14px;
                         z-index: 0;
                         left: 14px;
@@ -210,7 +212,7 @@
                         position: absolute;
                         width: 14px;
                         height: 14px;
-                        background: black;
+                        background: var(--black);
                         top: 0px;
                         z-index: 0;
                         right: -98px;
@@ -256,10 +258,479 @@
         }
     }
     .right {
+        .leg {
+            width: 28px;
+            height: 84px;
+            background: var(--blue);
+            position: absolute;
+            top: -62px;
+            left: 19px;
+            z-index: 1;
+            &:before {
+                content: '';
+                width: 14px;
+                height: 56px;
+                background: var(--blue-strong);
+                z-index: 1;
+                position: absolute;
+                bottom: 0px;
+            }
+            &:after {
+                content: '';
+                width: 28px;
+                height: 14px;
+                position: absolute;
+                background: var(--red-strong);
+                bottom: -42px;
+                z-index: 12;
+                left: 14px;
+            }
+        }
+        .socks {
+            position: absolute;
+            width: 56px;
+            height: 56px;
+            background: var(--grey-light);
+            left: 5px;
+            top: 8px;
+            .inner {
+                position: absolute;
+                width: 28px;
+                height: 14px;
+                background: var(--white);
+                left: 14px;
+                top: 14px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background: var(--grey-strong);
+                    right: -14px;
+                    top: 14px;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background: var(--red-strong);
+                    left: -28px;
+                    top: 28px;
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background: var(--grey-strong);
+                top: -14px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background: var(--grey-strong);
+                bottom: 28px;
+            }
+        }
+
+        .laces {
+            position: absolute;
+            width: 42px;
+            height: 56px;
+            background: #840201;
+            bottom: 14px;
+            left: 5px;
+            .upperRed {
+                background: var(--red);
+                position: absolute;
+                width: 28px;
+                height: 14px;
+                top: 0px;
+                left: 42px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -14px;
+                    height: 14px;
+                    width: 28px;
+                    right: -14px;
+                    background: var(--red);
+                }
+                &:after {
+                    content: '';
+                    background: var(--black);
+                    width: 182px;
+                    height: 14px;
+                    bottom: -56px;
+                    position: absolute;
+                    left: -28px;
+                }
+            }
+            .inner {
+                width: 42px;
+                height: 28px;
+                position: absolute;
+                background: var(--grey-strong);
+                right: -42px;
+                top: 28px;
+
+                &:after {
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    background: var(--grey-strong);
+                    position: absolute;
+                    bottom: 14px;
+                    left: 14px;
+                }
+                &:before {
+                    content: '';
+                    background: var(--grey-light);
+                    width: 28px;
+                    height: 28px;
+                    position: absolute;
+                    top: -14px;
+                    left: 14px;
+                }
+            }
+            .inner2 {
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                background: #c6c6e6;
+                right: -42px;
+
+                &:before {
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    background: #c6c6e6;
+                    right: -14px;
+                    top: 14px;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    background: var(--white);
+                    width: 28px;
+                    height: 14px;
+                    right: -28px;
+                }
+
+            }
+            &:after {
+                content: '';
+                width: 14px;
+                height: 42px;
+                background: var(--black);
+                position: absolute;
+                left: 0px;
+                top: 28px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                right: -14px;
+                background: #840201;
+                top: 14px;
+            }
+        }
+
+        .bottom {
+            position: absolute;
+            width: 56px;
+            height: 28px;
+            background: #840201;
+            bottom: 14px;
+            right: 43px;
+            .inner {
+                position: absolute;
+                background: var(--white);
+                width: 14px;
+                height: 14px;
+                left: 56px;
+                &:before {
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    background: var(--red);
+                    position: absolute;
+                    left: 14px;
+                }
+                &:after {
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    background: var(--red);
+                    position: absolute;
+                    left: -28px;
+                    top: -28px;
+                }
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 56px;
+                height: 28px;
+                background: var(--red);
+                top: -14px;
+                left: 14px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 42px;
+                height: 14px;
+                background: var(--red);
+                bottom: 0px;
+                right: -42px;
+            }
+        }
         position: absolute;
         left: 107px;
         bottom: 1px;
         height: 100%;
         width: 188px;
+    }
+}
+
+.arms {
+    position: absolute;
+    bottom: 134px;
+    width: 224px;
+    height: 126px;
+    left: 81px;
+    z-index: 5;
+
+    .left {
+        position: absolute;
+        width: 112px;
+        height: 126px;
+        .arm {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            top: 0px;
+            background: var(--orange);
+            left: 28px;
+
+            .inner {
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                left: -14px;
+                background: var(--orange-strong);
+                bottom: 0;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    background: var(--orange-strong);
+                    left: -14px;
+                    width: 14px;
+                    height: 14px;
+                    bottom: -14px;
+                }
+                &:after {
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    background: var(--blue-strong);
+                    position: absolute;
+                    left: -28px;
+                    top: 42px;
+                }
+            }
+            &:after {
+                content: '';
+                width: 14px;
+                height: 14px;
+                top: 0;
+                position: absolute;
+                right: -14px;
+                background: var(--orange);
+            }
+            &:before {
+                content: '';
+                width: 14px;
+                height: 14px;
+                top: 0;
+                position: absolute;
+                left: 0;
+                background: var(--orange-strong);
+            }
+        }
+        .hand {
+            position: absolute;
+            width: 56px;
+            height: 28px;
+            background: var(--grey-strong);
+            bottom: 0px;
+            left: 28px;
+
+            .glove {
+                position: absolute;
+                width: 56px;
+                height: 70px;
+                background: var(--white);
+                top: -70px;
+                z-index: 0;
+
+                .inner {
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background: var(--grey);
+                    z-index: 3;
+                    left: 0px;
+
+                    &:after {
+                        content: '';
+                        height: 28px;
+                        background: var(--grey);
+                        width: 14px;
+                        position: absolute;
+                        bottom: -70px;
+                        z-index: 4;
+                        left: 28px;
+                    }
+                    &:before {
+                        content: '';
+                        height: 28px;
+                        background: var(--white);
+                        width: 14px;
+                        position: absolute;
+                        bottom: -70px;
+                        z-index: 4;
+                        left: 14px;
+                    }
+                }
+                &:before {
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    background: var(--grey-light);
+                    top: 0px;
+                    left: 14px;
+                    position: absolute;
+                }
+                &:after {
+                    content: "";
+                    width: 14px;
+                    height: 28px;
+                    background: var(--grey);
+                    top: 56px;
+                    left: 0px;
+                    position: absolute;
+                    z-index: 0;
+                }
+            }
+            .leftShadows {
+                position: absolute;
+                width: 14px;
+                height: 42px;
+                top: -56px;
+                left: -14px;
+                background: var(--grey);
+                z-index: 1;
+                &:before {
+                    content: '';
+                    width: 28px;
+                    height: 14px;
+                    background: var(--grey-light);
+                    position: absolute;
+                    left: 0;
+                    top: 14px;
+                }
+                &:after {
+                    content: '';
+                    width: 28px;
+                    height: 14px;
+                    background: var(--grey-light);
+                    position: absolute;
+                    left: 14px;
+                    top: 0px;
+                }
+            }
+            .rightShadows {
+                width: 28px;
+                height: 42px;
+                position: absolute;
+                background: var(--grey);
+                top: -42px;
+                z-index: 1;
+                left: 56px;
+                .inner {
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background: var(--grey-strong);
+                    bottom: -14px;
+                    left: 0px;
+                    &:after {
+                        content: '';
+                        width: 14px;
+                        height: 14px;
+                        background: var(--blue-strong);
+                        top: -84px;
+                        position: absolute;
+                        left: -28px;
+                    }
+                    &::before {
+                        content: '';
+                        width: 14px;
+                        height: 14px;
+                        background: var(--grey);
+                        position: absolute;
+                        left: -14px;
+                    }
+                }
+                &:before {
+                    content: '';
+                    width: 14px;
+                    height: 28px;
+                    position: absolute;
+                    background: var(--white);
+                    top: -14px;
+                }
+                &:after {
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    background: var(--grey-strong);
+                    position: absolute;
+                    bottom: 0;
+                    left: 14px;
+                }
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -70px;
+                width: 14px;
+                height: 84px;
+                background: var(--grey-strong);
+                left: -14px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: -56px;
+                width: 14px;
+                height: 56px;
+                background: var(--grey-strong);
+                left: -28px;
+            }
+        }
     }
 }
