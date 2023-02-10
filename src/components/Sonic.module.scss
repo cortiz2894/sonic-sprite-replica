@@ -733,4 +733,481 @@
             }
         }
     }
+    .right {
+        position: absolute;
+        width: 70px;
+        height: 98px;
+        top: 0px;
+        right: 0px;
+        .hand {
+            background: var(--grey-strong);
+            position: absolute;
+            width: 14px;
+            height: 70px;
+            top: 14px;
+
+            &:before {
+                content: '';
+                width: 56px;
+                z-index: -1;
+                background: white;
+                position: absolute;
+                top: -14px;
+                left: 0;
+                height: 28px;
+            }
+            &:after {
+                content: '';
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                background: var(--grey-strong);
+                left: 14px;
+                top: 42px;
+            }
+            .inner {
+                position: absolute;
+                background: var(--grey);
+                left: 14px;
+                height: 42px;
+                width: 56px;
+                z-index: -2;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background: white;
+                    top: 14px;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background: var(--grey-strong);
+                    left: 28px;
+                    z-index: 5;
+                    top: 14px;
+                }
+            }
+            .shadows {
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background: var(--grey-strong);
+                left: 28px;
+                top: 28px;
+
+                .innerShadow {
+                    position: absolute;
+                    width: 42px;
+                    background: var(--grey);
+                    height: 14px;
+                    top: 14px;
+                    left: 0;
+                    & > div {
+                        position: absolute;
+                        width: 28px;
+                        height: 14px;
+                        background: var(--grey-strong);
+                        top: 28px;
+                        left: -14px;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: -84px;
+                            width: 28px;
+                            height: 14px;
+                            left: 14px;
+                            background: var(--grey);
+                        }
+                    }
+                    &:before {
+                        content: '';
+                        width: 28px;
+                        height: 14px;
+                        background: var(--grey);
+                        position: absolute;
+                        top: 14px;
+                        left: -14px;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 14px;
+                        height: 14px;
+                        background: var(--grey-strong);
+                        top: 14px;
+                        left: 14px;
+                    }
+                }
+                &:before {
+                    content: '';
+                    width: 28px;
+                    position: absolute;
+                    background: var(--white);
+                    left: 14px;
+                    height: 14px;
+                }
+                &:after {
+                    content: '';
+                    width: 14px;
+                    height: 28px;
+                    background: var(--white);
+                    position: absolute;
+                    top: -14px;
+                    right: -28px;
+                }
+            }
+        }
+    }
+    .body {
+        position: absolute;
+        right: 70px;
+        width: 84px;
+        height: 70px;
+        top: 0px;
+        .chest {
+            position: absolute;
+            height: 42px;
+            width: 42px;
+            background: var(--white);
+            right: 0px;
+            .light {
+                position: absolute;
+                width: 14px;
+                height: 28px;
+                background: var(--orange);
+                left: -14px;
+                top: 14px;
+                & > div {
+                    position: absolute;
+                    width: 14px;
+                    height: 28px;
+                    background: var(--orange);
+                    left: 28px;
+                    top: 28px;
+                    &:before {
+                        content: '';
+                        width: 14px;
+                        height: 14px;
+                        background: var(--orange-strong);
+                        position: absolute;
+                        left: -14px;
+                        top: 14px;
+                    }
+                    &:after {
+                        content: '';
+                        width: 14px;
+                        height: 14px;
+                        background: var(--blue-strong);
+                        position: absolute;
+                        right: -14px;
+                        top: 14px;
+                    }
+                }
+                &:before {
+                    content: "";
+                    width: 14px;
+                    height: 28px;
+                    background: var(--orange);
+                    right: -14px;
+                    top: 14px;
+                    position: absolute;
+                }
+                &:after {
+                    content: "";
+                    width: 14px;
+                    height: 28px;
+                    background: var(--orange);
+                    right: -42px;
+                    position: absolute;
+                    top: 14px;
+                }
+            }
+            .shadow {
+                position: absolute;
+                width: 14px;
+                height: 28px;
+                background: var(--orange-strong);
+                left: -28px;
+                top: 14px;
+                & > div {
+                    position: absolute;
+                    width: 28px;
+                    height: 28px;
+                    background: var(--blue);
+                    left: -14px;
+                    top: -14px;
+                    z-index: -1;
+                    &:before {
+                        content: '';
+                        width: 14px;
+                        height: 14px;
+                        background: var(--blue-strong);
+                        position: absolute;
+                    }
+                }
+                &:before {
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    background: var(--orange-strong);
+                    bottom: -14px;
+                    left: 14px;
+                }
+                &:after {
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    background: var(--orange-strong);
+                    top: -14px;
+                    left: 14px;
+                }
+            }
+            &:before {
+                content: '';
+                width: 14px;
+                height: 14px;
+                background: var(--orange-strong);
+                position: absolute;
+                right: 0;
+            }
+            &:after {
+                content: '';
+                width: 14px;
+                height: 14px;
+                background: var(--orange);
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
+
+.head {
+    position: absolute;
+    width: 336px;
+    height: 308px;
+    top: -3px;
+    left: -31px;
+    .mouth {
+        position: absolute;
+        width: 126px;
+        height: 42px;
+        background: var(--orange);
+        bottom: 70px;
+        right: 42px;
+        .nose {
+            position: absolute;
+            width: 42px;
+            height: 28px;
+            background: var(--black);
+            right: -42px;
+            top: -14px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background: var(--grey);
+                top: 0;
+                left: 0;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background: var(--grey-strong);
+                bottom: 0;
+                right: 0;
+            }
+        }
+        .smile {
+            width: 14px;
+            height: 14px;
+            background: var(--white);
+            position: absolute;
+            top: 0px;
+            left: 14px;
+            &:before {
+                content: '';
+                background: var(--black);
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                top: 14px;
+                left: 14px;
+            }
+            &:after {
+                content: '';
+                background: var(--orange-strong);
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                top: 28px;
+                left: 28px;
+            }
+        }
+        .borderBottom {
+            position: absolute;
+            width: 70px;
+            height: 14px;
+            background: var(--orange-strong);
+            bottom: -14px;
+            left: 28px;
+
+            &::after {
+                content: '';
+                width: 14px;
+                height: 14px;
+                background: var(--orange-strong);
+                position: absolute;
+                right: -42px;
+                top: -28px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 28px;
+                height: 14px;
+                background: var(--orange-strong);
+                bottom: 14px;
+                right: -28px;
+            }
+        }
+        .glow {
+            width: 14px;
+            height: 14px;
+            background: var(--orange-strong);
+            position: absolute;
+            top: -14px;
+            &:before {
+                content: '';
+                width: 28px;
+                height: 14px;
+                top: 0px;
+                position: absolute;
+                background: var(--orange);
+                left: 14px;
+            }
+            &:after {
+                content: '';
+                width: 14px;
+                height: 14px;
+                top: 0px;
+                position: absolute;
+                background: var(--orange-strong);
+                left: 112px;
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            left: -14px;
+            width: 14px;
+            height: 28px;
+            background: var(--orange-strong);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 28px;
+            bottom: 0px;
+            height: 14px;
+            background: var(--orange-strong);
+        }
+    }
+    .thorn1 {
+        position: absolute;
+        width: 140px;
+        height: 70px;
+        background: var(--blue-strong);
+        bottom: 42px;
+        right: 84px;
+
+        &:before {
+            content: '';
+            width: 42px;
+            height: 28px;
+            left: -14px;
+            position: absolute;
+            background: var(--blue-strong);
+            bottom: -14px;
+        }
+        &:after {
+            content: '';
+            width: 42px;
+            height: 14px;
+            background: var(--blue-strong);
+            position: absolute;
+            bottom: -27px;
+            left: -28px;
+        }
+    }
+    .thorn2 {
+        position: absolute;
+        width: 56px;
+        height: 28px;
+        background: var(--blue-strong);
+        bottom: 70px;
+        left: 56px;
+        & > div {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: var(--blue-strong);
+            left: -14px;
+            bottom: -14px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 28px;
+                background: var(--blue);
+                left: -14px;
+                bottom: 0;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background: var(--blue-strong);
+                left: 42px;
+                bottom: -55px;
+            }
+        }
+        &:before {
+            content: '';
+            width: 28px;
+            height: 28px;
+            background: var(--blue);
+            position: absolute;
+            top: -14px;
+        }
+        &:after {
+            content: '';
+            width: 14px;
+            height: 28px;
+            background: var(--blue);
+            position: absolute;
+            left: -14px;
+        }
+    }
+    .thorn3 {
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        box-shadow: 28px 0px 0 var(--blue), 14px 0 0 var(--blue), 28px 14px 0px var(--blue), 42px 14px 0px var(--blue), 42px 0px 0 var(--blue-strong), 56px 0px 0 var(--blue-strong), 70px 0px 0 var(--blue-strong), 84px 0px 0 var(--blue-strong), 98px 0px 0 var(--blue), 126px -14px 0 var(--blue), 112px -14px 0 var(--blue), 98px -14px 0 var(--blue), 84px -14px 0 var(--blue), 70px -14px 0 var(--blue-strong), 56px -14px 0 var(--blue-strong), 42px -14px 0 var(--blue-strong), 28px -14px 0 var(--blue-strong), 0px -28px 0 var(--blue-strong), 14px -28px 0 var(--blue-strong), 28px -28px 0 var(--blue-strong), 42px -28px 0 var(--blue-strong), 56px -28px 0 var(--blue-strong), 70px -28px 0 var(--blue), 84px -28px 0 var(--blue), 98px -28px 0 var(--blue), 112px -28px 0 var(--blue), 126px -28px 0 var(--blue), 70px -42px 0 var(--blue), 84px -42px 0 var(--blue), 98px -42px 0 var(--blue), 112px -42px 0 var(--blue), 126px -42px 0 var(--blue-strong), 56px -42px 0 var(--blue-strong), 42px -42px 0 var(--blue-strong), 28px -42px 0 var(--blue-strong), 14px -42px 0 var(--blue-strong), 0px -42px 0 var(--blue-strong), -14px -42px 0 var(--blue-strong), -28px -42px 0 var(--blue-strong), -42px -42px 0 var(--blue-strong), -56px -42px 0 var(--blue-strong), -70px -42px 0 var(--blue-strong), -70px -56px 0 var(--blue), -56px -56px 0 var(--blue-strong), -42px -56px 0 var(--blue-strong), -28px -56px 0 var(--blue-strong), -14px -56px 0 var(--blue-strong), 0px -56px 0 var(--blue-strong), 14px -56px 0 var(--blue-strong), 28px -56px 0 var(--blue-strong), 42px -56px 0 var(--blue), 56px -56px 0 var(--blue), 70px -56px 0 var(--blue), 84px -56px 0 var(--blue-light), 98px -56px 0 var(--blue), 112px -56px 0 var(--blue), 126px -56px 0 var(--blue-strong), 126px -70px 0 var(--blue-strong), 140px -70px 0 var(--blue-strong), 112px -70px 0 var(--blue), 98px -70px 0 var(--blue-light), 84px -70px 0 var(--white), 70px -70px 0 var(--blue-light), 56px -70px 0 var(--blue), 42px -70px 0 var(--blue), 28px -70px 0 var(--blue), 14px -70px 0 var(--blue), 0px -70px 0 var(--blue), -14px -70px 0 var(--blue), -28px -70px 0 var(--blue), -42px -70px 0 var(--blue), -56px -70px 0 var(--blue),-42px -84px 0 var(--blue),-28px -84px 0 var(--blue),-14px -84px 0 var(--blue),0px -84px 0 var(--blue),14px -84px 0 var(--blue),28px -84px 0 var(--blue),42px -84px 0 var(--blue),56px -84px 0 var(--blue-light),70px -84px 0 var(--blue-light),84px -84px 0 var(--blue-light),98px -84px 0 var(--blue-light),112px -84px 0 var(--blue-light) , 126px -84px 0 var(--blue-light), 140px -84px 0 var(--blue-strong), 154px -84px 0 var(--blue-strong), 168px -84px 0 var(--blue-strong), 182px -84px 0 var(--blue), 196px -84px 0 var(--blue-light) , 210px -84px 0 var(--blue-light) , 210px -84px 0 var(--blue) , 224px -84px 0 var(--blue), 238px -84px 0 var(--blue) , 252px -84px 0 var(--blue) , 252px -70px 0 var(--blue-light) , 238px -70px 0 var(--blue) , 224px -70px 0 var(--blue) , 210px -70px 0 var(--blue), 196px -70px 0 var(--blue-light), 210px -56px 0 var(--blue-strong), 224px -56px 0 var(--blue), 238px -56px 0 var(--blue), 238px -42px 0 var(--blue), 224px -42px 0 var(--blue-strong), 238px -98px 0 var(--blue), 224px -98px 0 var(--blue) , 210px -98px 0 var(--blue) , 196px -98px 0 var(--blue-light) , 182px -98px 0 var(--blue-light) , 168px -98px 0 var(--grey), 154px -98px 0 var(--blue-light) , 140px -98px 0 var(--blue-light) , 126px -98px 0 var(--blue-light) , 112px -98px 0 var(--blue), 98px -98px 0 var(--blue), 84px -98px 0 var(--blue), 70px -98px 0 var(--blue), 56px -98px 0 var(--blue), 42px -98px 0 var(--blue) , 28px -98px 0 var(--blue) , 14px -98px 0 var(--blue), 0px -98px 0 var(--blue), -14px -98px 0 var(--blue) , 28px -112px 0 var(--blue) , 42px -112px 0 var(--blue) , 56px -112px 0 var(--blue), 70px -112px 0 var(--blue-strong), 84px -112px 0 var(--orange-strong), 98px -112px 0 var(--orange-strong), 98px -112px 0 var(--blue-strong), 112px -112px 0 var(--blue-strong), 126px -112px 0 var(--blue-strong), 140px -112px 0 var(--blue-light), 154px -112px 0 var(--blue-light), 168px -112px 0 var(--blue-light), 182px -112px 0 var(--blue-light), 196px -112px 0 var(--blue-light), 210px -112px 0 var(--blue), 224px -112px 0 var(--blue), 238px -112px 0 var(--blue);
+        bottom: 112px;
+        left: 56px;
+    }
+    
 }
